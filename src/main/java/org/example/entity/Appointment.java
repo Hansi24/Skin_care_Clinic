@@ -1,10 +1,10 @@
-package models;
+package org.example.entity;
 
 import java.util.List;
 
-public class K2462921_Appointment {
+public class Appointment {
     private String appointmentId;
-    private K2462921_Patient patient;
+    private Patient patient;
     private String date;
     private String time;
     private String dermatologist;
@@ -13,7 +13,7 @@ public class K2462921_Appointment {
     private String totalCost;
 
     // Constructor for creating an appointment with treatments
-    public K2462921_Appointment(String appointmentId, K2462921_Patient patient, String date, String time, String dermatologist, List<String> treatments, double treatmentCost) {
+    public Appointment(String appointmentId, Patient patient, String date, String time, String dermatologist, List<String> treatments, double treatmentCost) {
         this.appointmentId = appointmentId;
         this.patient = patient;
         this.date = date;
@@ -23,7 +23,7 @@ public class K2462921_Appointment {
         this.treatmentCost = treatmentCost;
     }
 
-    public K2462921_Appointment(){
+    public Appointment(){
 
     }
 
@@ -32,7 +32,7 @@ public class K2462921_Appointment {
         return appointmentId;
     }
 
-    public K2462921_Patient getPatient() {
+    public Patient getPatient() {
         return patient;
     }
 
@@ -84,7 +84,7 @@ public class K2462921_Appointment {
     public void setTotalCost(double totalCost) {
     }
 
-    public void setPatient(K2462921_Patient patient) {
+    public void setPatient(Patient patient) {
     }
 
     public void setId(String id) {

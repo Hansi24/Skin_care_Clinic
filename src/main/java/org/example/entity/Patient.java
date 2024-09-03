@@ -1,19 +1,19 @@
-package models;
+package org.example.entity;
 
-public class K2462921_Patient {
+public class Patient {
     private String nic;
     private String name;
     private String email;
     private String phone;
 
-    public K2462921_Patient(String nic, String name, String email, String phone) {
+    public Patient(String nic, String name, String email, String phone) {
         this.nic = nic;
         this.name = name;
         this.email = email;
         this.phone = phone;
     }
 
-    public K2462921_Patient() {
+    public Patient() {
     }
 
     public String getNic() {
